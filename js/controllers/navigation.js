@@ -1,0 +1,2 @@
+// Navigation controller.
+function setPage(page){currentPage=page;$("#sidebar").classList.remove("open");$$(".nav-item").forEach(b=>b.classList.toggle("active",b.dataset.page===page));const label=({dashboard:"Overview",discover:"Discover talent",matches:"Team matches",teams:"My teams",messages:"Messages",skills:"Skill graph",calendar:"Availability",portfolio:"Portfolio studio",profile:"My profile"})[page]||"Overview";$("#pageCrumb").textContent=label;renderPage();window.scrollTo({top:0,behavior:"smooth"})}

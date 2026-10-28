@@ -1,0 +1,10 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SkillMesh | Sign In</title><link rel="stylesheet" href="auth.css">
+</head>
+<body><main class="card"><a class="brand" href="../index.html">✳ SkillMesh</a><p class="eyebrow">BUILD BETTER TOGETHER</p><h1 id="title">Welcome back</h1><p id="subtitle">Sign in to continue to your SkillMesh space.</p>
+<div class="tabs"><button id="signinTab" class="active" type="button">Sign In</button><button id="signupTab" type="button">Sign Up</button></div>
+<p id="message" role="status"></p><form id="authForm"><label id="nameLabel" hidden>Full name<input id="name" autocomplete="name"></label><label>Email address<input id="email" type="email" required autocomplete="email"></label><label>Password<input id="password" type="password" required minlength="6" autocomplete="current-password"></label><label id="confirmLabel" hidden>Confirm password<input id="confirm" type="password" minlength="6" autocomplete="new-password"></label><button class="submit" id="submit" type="submit">Sign In ↗</button></form>
+<p class="switch">New to SkillMesh? <button id="switch" type="button">Create an account</button></p><p class="note">Demo authentication stores account details in this browser only. Do not use a real password.</p></main><script src="auth.js"></script></body></html>
